@@ -1,0 +1,71 @@
+.black-top-nav {
+    background-color: black;
+    color: white;
+}
+.black-top-nav ul li {
+    float: left;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+nav li a {
+    text-decoration: none;
+}
+
+.black-top-nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.black-top-nav li a {
+    color: rgb(185, 185, 185);
+}
+
+.black-top-nav li a:hover {
+    color: white;
+}
+.black-top-nav .active a {
+    color: white;
+}
+.nav-search {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-search .fa-search,
+.nav-text li {
+    padding: 15px;
+}
+
+.fa-search {
+    border-left: 1px solid rgb(204, 204, 204);
+    font-size: 1.1em;
+}
+
+.nav-text {
+    width: 60%;
+}
+.nav-text li {
+float: left;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav li a {
+    color: rgba(170,170,170);
+
+}
+.main-nav li a:hover {
+color: black;
+}
+
+.yellow-div {
+    background-color: rgb(255, 221, 51);
+}
+
+.yellow-div p {
+    padding: 8px;
+}
