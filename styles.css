@@ -1,3 +1,12 @@
+nav {
+    position: relative;
+}
+
+.logo {
+    background: pink;
+    height: 50px;
+    width: 50px;
+}
 .black-top-nav {
     background-color: black;
     color: white;
@@ -24,6 +33,7 @@ nav li a {
 .black-top-nav li a:hover {
     color: white;
 }
+
 .black-top-nav .active a {
     color: white;
 }
@@ -45,14 +55,38 @@ nav li a {
 }
 
 .nav-text {
-    width: 60%;
+    width: 90%;
 }
 .nav-text li {
 float: left;
 }
+
+.nested li {
+    padding: 10px 0;
+}
+.nested {
+    color: white;
+    font-size: 15px;
+    width: 210px;
+    position: absolute;
+}
+.one {
+    top: 26px;
+    left: 57px;
+    font-size: 15px;
+    background-color: purple;
+    display: none;
+}
+
+.two {
+    background: orange;
+    display: none;
+}
 .main-nav {
     display: flex;
     justify-content: space-between;
+    font-family: 'Play', sans-serif;
+    font-size: .98em;
 }
 .main-nav li a {
     color: rgba(170,170,170);
@@ -62,10 +96,18 @@ float: left;
 color: black;
 }
 
+
+
+
 .yellow-div {
     background-color: rgb(255, 221, 51);
 }
 
 .yellow-div p {
     padding: 8px;
+}
+
+
+@media only screen and (max-width: 1025px){
+
 }
