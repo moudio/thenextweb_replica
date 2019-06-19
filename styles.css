@@ -108,6 +108,25 @@ color: black;
 }
 
 
+.latest-news {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.latest-news:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+
+.latest-news-thumbnail {
+    float:left;
+    width: 25%;
+}
+
+
 @media only screen and (max-width: 1025px){
 
 }
