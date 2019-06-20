@@ -181,18 +181,97 @@ color: black;
     overflow: hidden;
 }
 
-
-.latest-news-thumbnail {
-    float:left;
-    width: 25%;
+.latest-news-title {
+    width: 80%;
+    margin: 20px auto;
 }
+
+.latest-news-title a {
+    color: #f42;
+    font-size: 28px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.latest-news-title a:hover {
+    color: black;
+}
+
+
+.author-detail {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Lato', 'san-serif';
+}
+
+.author-detail a {
+    text-decoration: none;
+    color: gray;
+    padding-right: 10px;
+}
+
+
+
+/* GROUPS */
+
+
 
 
 /* LATEST DEALS */
 
-.latest-deals {
+.main-deals {
     width: 80%;
     margin: 0 auto;
+    
+}
+
+.main-deals:after {
+    content:"";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.latest-deals-title a {
+    float:left;
+    color: #f42;
+    font-size: 28px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.latest-deals-title a:hover, .more-deals a:hover {
+    color: black;
+}
+
+.fa-greater-than {
+    font-size: 14px;
+    vertical-align: 3px;
+}
+
+
+
+.more-deals {
+    display: inline-block;
+    float: right;
+}
+
+
+.more-deals a{ 
+    color: #f42;
+    font-size: 18px;
+    font-family: 'Lato', 'san-serif';
+    text-decoration: none;
+    
+}
+
+
+
+.latest-deals {
+    width: 80%;
+    margin: 20px auto;
 }
 
 .latest-deals:after {
@@ -202,17 +281,33 @@ color: black;
     overflow: hidden;
 }
 
-.latest-deals-thumbnail {
+.latest-deals-thumbnail, .latest-news-thumbnail {
     float: left;
     width: 25%;
+    padding: 20px 0;
+    margin: 0;
 }
 
-.deals-title {
+.deals-title, .thumbnail-title {
     width: 90%;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Lato', 'san-serif';
     font-weight: bold;
     padding: 5px 0;
+    line-height: 23px;
+}
+
+.deals-title a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.deals-title a:hover {
+    color: #f42;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(247, 117, 95);
 }
 
 .deals-price {
