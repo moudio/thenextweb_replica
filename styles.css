@@ -3,6 +3,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 999;
 }
 
 /* nav::after {
@@ -166,6 +167,9 @@ color: black;
     color: black;
 }
 
+main {
+    margin-top: 104px;
+}
 /* LATEST NEWS */
 
 
@@ -227,9 +231,52 @@ color: black;
 }
 
 
+/* ARTILCES TOP */
 
 
+.logo-and-date img {
+    width: 35%;
+    float: left;
 
+}
+
+.logo-and-date .date {
+    float: right;
+}
+.logo-and-date {
+    position: absolute;
+    width: 90%;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.article1 {
+    position: relative;
+    width: 60%;
+    height: 500px;
+}
+
+.article-main-image {
+    width: 100%;
+}
+
+.article1 .title {
+    font-size: 3em;
+}
+
+.details li {
+    float: left;
+    padding: 10px;
+}
+
+.details::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* FOOTER */
 
 footer {
