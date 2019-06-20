@@ -87,6 +87,7 @@ nav li a {
 .nav-text {
     width: 90%;
 }
+
 .nav-text li {
 float: left;
 }
@@ -169,12 +170,14 @@ color: black;
 /* LATEST NEWS */
 
 
-.latest-news {
+.latest-news-top, .latest-news-bottom {
+    display: flex;
+    justify-content: flex-start;
     width: 80%;
     margin: 0 auto;
 }
 
-.latest-news:after {
+.latest-news-top:after, .latest-news-bottom {
     content: "";
     display: block;
     clear: both;
@@ -186,7 +189,7 @@ color: black;
     margin: 20px auto;
 }
 
-.latest-news-title a {
+.latest-news-title a, .category-title a {
     color: #f42;
     font-size: 28px;
     font-family: 'Lato', 'san-serif';
@@ -194,7 +197,7 @@ color: black;
     text-decoration: none;
 }
 
-.latest-news-title a:hover {
+.latest-news-title a:hover, .category-title a:hover {
     color: black;
 }
 
@@ -215,7 +218,72 @@ color: black;
 
 /* GROUPS */
 
+.group1,
+.group2,
+.group3 {
+    display:flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 40px auto;
+}
 
+.group1:after, .group2:after, .group3:after{
+    content:"";
+    display: block;
+    clear:both;
+    overflow:hidden;
+ }
+
+.apps,
+.gear,
+.tech,
+.podium,
+.insights,
+.distract,
+.launch,
+.creative {
+    float:left;
+    width: 33.3%;
+    margin: 0 auto;
+    
+}
+
+
+
+/*.tech-image,
+.apps-image,
+.launch-image,
+.distract-image,
+.gear-image,
+.creative-image,
+.insights-image,
+.podium-image
+ {
+   width: 350px;
+   height: 240px;
+}*/
+
+.tech-image {
+    background-image: url(images/roli-lumni.png);
+}
+
+
+.group-list li {
+    width: 85%;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.group-list li a {
+    
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-family: 'Lato', 'san-serif';
+    line-height: 25px;
+    border-bottom: 1px solid lightgray;
+    
+}
 
 
 /* LATEST DEALS */
@@ -254,7 +322,6 @@ color: black;
 
 
 .more-deals {
-    display: inline-block;
     float: right;
 }
 
@@ -264,7 +331,6 @@ color: black;
     font-size: 18px;
     font-family: 'Lato', 'san-serif';
     text-decoration: none;
-    
 }
 
 
@@ -297,14 +363,14 @@ color: black;
     line-height: 23px;
 }
 
-.deals-title a {
+.deals-title a, .thumbnail-title a {
     text-decoration: none;
     color: black;
 }
 
 
 
-.deals-title a:hover {
+.deals-title a:hover, .thumbnail-title a:hover{
     color: #f42;
     cursor: pointer;
     border-bottom: 1px solid rgb(247, 117, 95);
@@ -366,6 +432,7 @@ footer {
     width: 30px;
     height: 30px;
     border-radius: 100%;
+    border: 2px solid rgb(85, 85, 85);
     background-color: rgb(85,85,85);
     padding-top: 7px;
     padding-bottom: 2px;
