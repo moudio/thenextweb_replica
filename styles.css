@@ -1,3 +1,4 @@
+
 nav {
     position: fixed;
     width: 100%;
@@ -72,17 +73,6 @@ nav li a {
     border-left: 1px solid rgb(204, 204, 204);
     font-size: 1.1em;
 }
-
-/*#input-search {
-    display: none;
-    width: 800px;
-    height: 600px;
-    background-color: white;
-}
-
-#input-search:target {
-    display: block;
-}*/
 
 
 .fa-bars {
@@ -176,6 +166,9 @@ color: black;
     color: black;
 }
 
+/* LATEST NEWS */
+
+
 .latest-news {
     width: 80%;
     margin: 0 auto;
@@ -195,6 +188,45 @@ color: black;
 }
 
 
+/* LATEST DEALS */
+
+.latest-deals {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.latest-deals:after {
+    content:"";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.latest-deals-thumbnail {
+    float: left;
+    width: 25%;
+}
+
+.deals-title {
+    width: 90%;
+    font-size: 18px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.deals-price {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+}
+
+.strike-price {
+    font-size: 13px;
+    color: rgb(170, 170, 170);
+    text-decoration: line-through;
+}
+
+
 
 
 
@@ -206,55 +238,66 @@ footer {
 }
 
 .footer-top {
+    margin: 0 auto;
     height: 90px;
     background-color: rgb(13,13,13);
     padding-top: 42px;
-    padding-bottom: 28px;
-    margin: 0 auto;
-    
+    padding-bottom: 28px;  
 }
 
 .social {
+    text-align: center;
     width: 80%;
     height: 45px;
-    margin-bottom: 21px;
+    padding-bottom: 21px;
     margin: 0 auto;
-    text-align: center;
 }
 
-
 .footer-links {
-
-    height: 24px;
+    width: 80%;
+    height: 24px; 
+    text-align: center;
     margin: 0 auto;
-    
-   
+}
+
+.social ul, .footer-links ul {
+    display: inline-block;
 }
 
 
 
 .social li .fab, .social li .fas {
     margin: 0 auto;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     background-color: rgb(85,85,85);
+    padding-top: 7px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
     
 }
+
+.social li .fab:hover, .social li .fas:hover {
+    background-color: black;
+}
+
 
 .social li a{
     text-decoration: none;
     color: lightgray;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Lato', 'san-serif';
     
 }
+
 
  .footer-links li, .social li {
     list-style-type: none;
     float:left;
     margin-right: 20px;
-    text-align: center;
+
 
 }
 
@@ -263,6 +306,10 @@ footer {
     color: lightgray;
     font-size: 13px;
     font-family: 'Lato', 'san-serif';
+}
+
+.footer-links li a:hover {
+    color: white;
 }
 
 .footer-bottom {
