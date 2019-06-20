@@ -1,6 +1,7 @@
 nav {
-    position: relative;
+    position: fixed;
     width: 100%;
+    top: 0;
 }
 
 /* nav::after {
@@ -18,10 +19,12 @@ nav {
 
 
 .black-top-nav {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     color: white;
+    z-index: 2;
 }
-.black-top-nav ul li {
+
+.black-top-nav li {
     float: left;
     padding: 5px 10px;
     font-size: 15px;
@@ -37,11 +40,12 @@ nav li a {
 }
 
 
-.black-top-nav li a {
+.black-top-nav a {
     color: rgb(185, 185, 185);
+    padding-bottom: 15px;
 }
 
-.black-top-nav li a:hover {
+.black-top-nav a:hover {
     color: white;
 }
 
@@ -49,7 +53,7 @@ nav li a {
     color: white;
 }
 .nav-search {
-    width: 120px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +90,9 @@ nav li a {
     color: #ff4422;
     
 }
+.bars {
+    display: none;
+}
 
 .nav-text {
     width: 90%;
@@ -95,40 +102,59 @@ float: left;
 }
 
 .nested li {
-    padding: 10px 0;
+    padding: 10px 0 10px 5px;
+    display: block;
+    width: 100%;
 }
-.nested {
+.nested li a:hover {
     color: white;
+}
+
+.nested {
+    color: rgb(185, 185, 185);
     font-size: 15px;
     width: 210px;
     position: absolute;
 }
 .one {
-    top: 26px;
-    left: 57px;
+    top: 25px;
     font-size: 15px;
-    background-color: purple;
+    display: none;
+    background: black;
+    z-index: 0;
+}
+
+.one:hover,
+.two:hover {
     display: block;
 }
 
 .two {
-    background: orange;
+    background: black;
     display: none;
+    top: 25px;
+    
+    
+
 }
 .main-nav {
     display: flex;
     justify-content: space-between;
     font-family: 'Play', sans-serif;
     font-size: .96em;
+    background: white;
 }
 .main-nav li a {
     color: rgba(170,170,170);
 
 }
 
-.black-top-nav li a:hover .one {
-    display: none;
+.black-top-nav li a:hover + .one,
+.black-top-nav li a:hover + .two {
+    display: block;
 }
+
+
 
 
 .main-nav li a:hover {
@@ -136,20 +162,19 @@ color: black;
 }
 
 
-
-
-
-
-
 .yellow-div {
     background-color: rgb(255, 221, 51);
-    clear: both;
+    margin-top: -3px;
 }
 
 .yellow-div p {
     padding: 8px;
 }
 
+.yellow-div a {
+    text-decoration: none;
+    color: black;
+}
 
 .latest-news {
     width: 80%;
@@ -282,7 +307,8 @@ footer {
     .nav-content {
         width: 90%;
     }
-   
+
+
   
 }
 
@@ -308,8 +334,12 @@ footer {
    .main-nav {
        justify-content: flex-end;
    }
-    .fa-bars {
-        display: block;
+
+    .nav-search {
+        width:120px;
     }
+   .bars {
+       display: block;
+   }
 }
 
