@@ -69,6 +69,18 @@ nav li a {
     font-size: 1.1em;
 }
 
+/*#input-search {
+    display: none;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+}
+
+#input-search:target {
+    display: block;
+}*/
+
+
 .fa-bars {
     display: none;
     color: #ff4422;
@@ -126,6 +138,9 @@ color: black;
 
 
 
+
+
+
 .yellow-div {
     background-color: rgb(255, 221, 51);
     clear: both;
@@ -133,6 +148,112 @@ color: black;
 
 .yellow-div p {
     padding: 8px;
+}
+
+
+.latest-news {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.latest-news:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+
+.latest-news-thumbnail {
+    float:left;
+    width: 25%;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-top {
+    height: 90px;
+    background-color: rgb(13,13,13);
+    padding-top: 42px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+    
+}
+
+.social {
+    width: 80%;
+    height: 45px;
+    margin-bottom: 21px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.footer-links {
+
+    height: 24px;
+    margin: 0 auto;
+    
+   
+}
+
+
+
+.social li .fab, .social li .fas {
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(85,85,85);
+    
+}
+
+.social li a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 18px;
+    font-family: 'Lato', 'san-serif';
+    
+}
+
+ .footer-links li, .social li {
+    list-style-type: none;
+    float:left;
+    margin-right: 20px;
+    text-align: center;
+
+}
+
+ .footer-links li a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 13px;
+    font-family: 'Lato', 'san-serif';
+}
+
+.footer-bottom {
+    height: 57px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Lato', 'san-serif';
+    font-size: 13px;
+
+}
+
+.footer-bottom img {
+    width: 37px;
+    height: 9px;
 }
 
 
@@ -191,3 +312,4 @@ color: black;
         display: block;
     }
 }
+
