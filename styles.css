@@ -96,7 +96,7 @@ float: left;
     left: 57px;
     font-size: 15px;
     background-color: purple;
-    display: none;
+    display: block;
 }
 
 .two {
@@ -107,12 +107,18 @@ float: left;
     display: flex;
     justify-content: space-between;
     font-family: 'Play', sans-serif;
-    font-size: .98em;
+    font-size: .96em;
 }
 .main-nav li a {
     color: rgba(170,170,170);
 
 }
+
+.black-top-nav li a:hover .one {
+    display: none;
+}
+
+
 .main-nav li a:hover {
 color: black;
 }
