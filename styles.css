@@ -174,7 +174,11 @@ color: black;
 main {
     margin-top: 104px;
 }
+
+
+
 /* LATEST NEWS */
+
 
 
 .latest-news-top, .latest-news-bottom {
@@ -193,7 +197,7 @@ main {
 
 .latest-news-title {
     width: 80%;
-    margin: 20px auto;
+    margin: 60px auto 20px;
 }
 
 .latest-news-title a, .category-title a {
@@ -232,6 +236,7 @@ main {
     justify-content: flex-end;
     width: 80%;
     margin: 40px auto;
+    padding:12px;
 }
 
 .group1:after, .group2:after, .group3:after{
@@ -257,7 +262,7 @@ main {
 
 
 
-/*.tech-image,
+.tech-image,
 .apps-image,
 .launch-image,
 .distract-image,
@@ -266,30 +271,83 @@ main {
 .insights-image,
 .podium-image
  {
-   width: 350px;
-   height: 240px;
-}*/
+   width: 310px;
+   height: 232px;
+}
 
 .tech-image {
-    background-image: url(images/roli-lumni.png);
+    background-image: url(images/gear.png);
 }
+
+
+.related {
+    display:flex;
+    justify-content: flex-start;
+    background-color: rgba(255,68,34,.06);
+    width: 90%;
+    margin: 4px 0;
+    height: 98px;
+}
+
+.related-details {
+    padding: 15px;
+}
+
+.related-latest {
+    font-family: 'Lato', 'san-serif';
+    font-size: 16px;
+    color: #f42;
+}
+
+.related-title a {
+    font-family: 'Lato', 'san-serif';
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f42;
+    margin-bottom: 5px;
+}
+
+.related-title a:hover {
+    border-bottom: 1px solid rgb(255, 179, 166);
+}
+
+
+
 
 
 .group-list li {
     width: 85%;
-    list-style-type: disc;
+    list-style: none;
     margin-left: 15px;
 }
 
+.group-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
 .group-list li a {
-    
     text-decoration: none;
-    color: rgb(85, 85, 85);
+    color: rgb(90, 90, 90);
     font-size: 13px;
     font-family: 'Lato', 'san-serif';
     line-height: 25px;
     border-bottom: 1px solid lightgray;
     
+}
+
+.group-list li a:hover {
+    color: black;
+}
+
+.image-title {
+    color: white;
+    font-family: 'Lato', 'san-serif';
 }
 
 
