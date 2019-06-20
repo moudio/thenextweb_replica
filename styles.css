@@ -200,7 +200,7 @@ main {
     margin: 60px auto 20px;
 }
 
-.latest-news-title a, .category-title a {
+.latest-news-title a, .category-title a, .latest-funding-title a{
     color: #f42;
     font-size: 28px;
     font-family: 'Lato', 'san-serif';
@@ -208,7 +208,7 @@ main {
     text-decoration: none;
 }
 
-.latest-news-title a:hover, .category-title a:hover {
+.latest-news-title a:hover, .category-title a:hover, .latest-funding-title a:hover {
     color: black;
 }
 
@@ -226,12 +226,48 @@ main {
 }
 
 
+/* LATEST FUNDING */
+
+.latest-funding {
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+.latest-funding-details {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.subjectwell,
+.springlabs,
+.symphony,
+.buy {
+    width: 25%;
+    padding: 10px;
+}
+
+.latest-funding-details  ul {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f42;
+}
+
+
+
+
+
+
+
 
 /* GROUPS */
 
 .group1,
-.group2,
-.group3 {
+.group2
+ {
     display:flex;
     justify-content: flex-end;
     width: 80%;
@@ -239,7 +275,15 @@ main {
     padding:12px;
 }
 
-.group1:after, .group2:after, .group3:after{
+.group3 {
+    width: 66%;
+    display: flex;
+    justify-content: flex-end;
+    /*margin: 40px auto;*/
+    padding: 12px;
+}
+
+.group1:after, .group2:after, .group3:after {
     content:"";
     display: block;
     clear:both;
@@ -251,14 +295,18 @@ main {
 .tech,
 .podium,
 .insights,
-.distract,
-.launch,
 .creative {
     float:left;
     width: 33.3%;
     margin: 0 auto;
     
 }
+
+.launch,
+.distract {
+    float:left;
+}
+
 
 
 
@@ -295,14 +343,14 @@ main {
 
 .related-latest {
     font-family: 'Lato', 'san-serif';
-    font-size: 16px;
+    font-size: 13px;
     color: #f42;
 }
 
 .related-title a {
     font-family: 'Lato', 'san-serif';
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: #f42;
     margin-bottom: 5px;
