@@ -271,6 +271,57 @@ main {
     padding: 10px;
 }
 
+.fund-group a {
+    text-decoration: none;
+    position: relative;
+}
+
+.fund-group img {
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fund-group-name {
+    background-color: #f42;
+    color: white;
+    font-size: 18px;
+    padding-right: 16px;
+    padding-left: 84px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Lato', 'san-serif';
+}
+
+.fund-detail {
+    padding-right: 16px;
+    padding-left: 84px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    background: rgba(255,68,34,.08);
+}
+
+.fund-detail h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', 'san-serif';
+    padding-bottom: 5px;
+}
+
+.fund-detail h5 {
+    font-size: 12px;
+    opacity: 0.5;
+    font-family: 'Lato', 'san-serif';
+}
+
+
+
+
 .latest-funding-details  ul {
     padding: 16px;
     border-bottom: 1px solid rgb(253, 178, 165);
@@ -374,9 +425,6 @@ main {
     float:left;
 }
 
-
-
-
 .tech-image,
 .apps-image,
 .launch-image,
@@ -384,43 +432,87 @@ main {
 .gear-image,
 .creative-image,
 .insights-image,
-.podium-image
- {
-   width: 90%;
-   height: 232px;
-}
-
-.gear-image {
-    background-image: url(images/gear.png);
-}
-.tech-image {
-    background-image: url(images/gear.png);
-
-}
-.apps-image {
-    background-image: url(images/gear.png);
-
-}
-.distract-image {
-    background-image: url(images/gear.png);
-
-}
 .podium-image {
-    background-image: url(images/gear.png);
+    position: relative;
+    color: white;
+}
+
+.image-title {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-size: 14px;
+}
+
+.article-title{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
 
 }
-.creative-image {
-    background-image: url(images/gear.png);
+
+.article-author-detail {
+    position: absolute;
+    top: 208px;
+    left: 20px;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.article-author-detail a {
+    text-decoration: none;
+    color: lightgray;
+    padding-right: 10px;
+}
+
+.article-title a:hover {
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.article-author-detail a:hover {
+    color: white;
+}
+
+.article-title,
+.article-author-detail,
+.image-title {
+    font-family: 'Lato', 'san-serif';
+}
+ 
+
+
+
+
+.tech-image img,
+.apps-image img,
+.launch-image img,
+.distract-image img,
+.gear-image img,
+.creative-image img,
+.insights-image img,
+.podium-image img
+ {
+   width: 380px;
+   height: 232px;
 
 }
-.insights-image {
-    background-image: url(images/gear.png);
 
-}
-.launch-image {
-    background-image: url(images/gear.png);
-
-}
+.creative-image img::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(from bottom to top, rgb(34, 33, 33) 100%, rgb(136, 133, 133) 0);
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
 
 
 
