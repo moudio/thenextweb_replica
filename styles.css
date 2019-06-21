@@ -527,14 +527,14 @@ margin: 0 5px;
 .tech
  {
     float:left;
-    width: 33.3%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 10px;
     
 }
 
 .group2-item {
     width: 30%;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .group2-item img {
@@ -605,26 +605,19 @@ margin: 0 5px;
 }
  
 
-
-
-
 .tech-image img,
 .apps-image img,
-.gear-image img
+.gear-image img,
+.creative-image img,
+.podium-image img,
+.insights-image img,
+.launch-image img,
+.distract-image img
  {
    width: 380px;
    height: 232px;
 
 }
-
-.creative-image img::after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(from bottom to top, rgb(34, 33, 33) 100%, rgb(136, 133, 133) 0);
-    height: 150px;
-    width: 100%;
-    content: '';
-  }
 
 
 
@@ -632,13 +625,14 @@ margin: 0 5px;
     display:flex;
     justify-content: flex-start;
     background-color: rgba(255,68,34,.06);
-    width: 90%;
+    width: 100%;
     margin: 4px 0;
     height: 98px;
 }
 
 .related-details {
     padding: 15px;
+    width: 90%;
 }
 
 .related-latest {
@@ -659,9 +653,6 @@ margin: 0 5px;
 .related-title a:hover {
     border-bottom: 1px solid rgb(255, 179, 166);
 }
-
-
-
 
 
 .group-list li {
@@ -905,23 +896,32 @@ footer {
     height: 9px;
 }
 
+.latest-funding ul{
+    display: none;
+}
 
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1265px){
     .latest-news,
-    .latest-deals {
+    .latest-deals,
+    .latest-funding-details,
+    .latest-funding {
         width: 95%;
         margin: 0 auto;
             }
+
 .latest-news-thumbnail {
     width: 30%;
 }
 
+
+
 .latest-deals-thumbnail {
     width: 23%;
 }
+
     
 }
 
@@ -960,7 +960,14 @@ footer {
         font-size: 1.1em;
     }
 
+    .buy {
+        display: none;
+    }
 
+  .span1 a {
+
+     display: inline-block;
+ }
   
 }
 
@@ -1035,20 +1042,25 @@ footer {
     margin-right: 12px;
 }
 
+
 }
 
 @media only screen and (max-width: 730px){
     .latest-news-thumbnail,
-    .latest-deals-thumbnail {
+    .latest-deals-thumbnail,
+    {
         display: flex;
         width: 100%;
     }
+
+
 
     .thumbnail-img,
     .latest-deals-img {
         width: 30%;
         margin-right: 10px;
     }
+
 .thumbnail-text,
 .latest-deals-text {
     width: 65%;
@@ -1057,4 +1069,6 @@ footer {
         width: 100%;
         height: 100%;
     }
+
+
 }
