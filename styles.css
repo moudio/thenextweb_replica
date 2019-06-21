@@ -181,20 +181,16 @@ main {
 
 
 
-.latest-news-top, .latest-news-bottom {
-    display: flex;
-    justify-content: flex-start;
+
+.latest-news::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.latest-news {
     width: 80%;
     margin: 0 auto;
 }
-
-.latest-news-top:after, .latest-news-bottom {
-    content: "";
-    display: block;
-    clear: both;
-    overflow: hidden;
-}
-
 .latest-news-title {
     width: 80%;
     margin: 60px auto 20px;
