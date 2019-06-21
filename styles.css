@@ -200,13 +200,15 @@ main {
     margin: 60px auto 20px;
 }
 
-.latest-news-title a, .category-title a, .latest-funding-title a{
+.latest-news-title a, .category-title a, .latest-funding-title a {
     color: #f42;
     font-size: 28px;
     font-family: 'Lato', 'san-serif';
     font-weight: bold;
     text-decoration: none;
 }
+
+
 
 .latest-news-title a:hover, .category-title a:hover, .latest-funding-title a:hover {
     color: black;
@@ -231,15 +233,34 @@ main {
 .latest-funding {
     width: 80%;
     margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
 }
 
+
+.latest-funding span a{
+    color: #f42;
+    font-size: 16px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.span1 {
+    padding: 0 10px;
+    
+}
+
+.info {
+    border-right: 1px solid #f42;
+}
 
 .latest-funding-details {
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding-bottom: 80px;
+
 }
 
 .subjectwell,
@@ -251,19 +272,65 @@ main {
 }
 
 .latest-funding-details  ul {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #f42;
+    padding: 16px;
+    border-bottom: 1px solid rgb(253, 178, 165);
+    background-color: rgba(255, 68, 34, 0.027);
+    height: 50px;
+}
+
+.latest-funding-details ul li a, .latest-funding-details p a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-family: 'Lato', 'san-serif';
+    line-height: 25px;
+}
+
+.latest-funding-details ul li a {
+    font-size: 13px;
+}
+
+.latest-funding-details ul li a:hover {
+    color: black;
+}
+
+.latest-funding-details p a {
+    font-size: 12px;
+}
+
+.index {
+    color: rgb(175, 174, 174);
+}
+
+.latest-funding-details .fas {
+    margin-right: 10px;
+    color: black;
 }
 
 
+.subjectwell,
+.symphony,
+.buy,
+.springlabs {
+    width: 285px;
+    height: 294px;
+}
 
+.latest-funding-details p {
+    background-color: rgba(255, 67, 34, 0.027);
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
 
-
-
+}
 
 
 /* GROUPS */
+
+.category-title {
+    margin-bottom: 20px;
+}
 
 .group1,
 .group2
@@ -319,13 +386,42 @@ main {
 .insights-image,
 .podium-image
  {
-   width: 310px;
+   width: 90%;
    height: 232px;
 }
 
-.tech-image {
+.gear-image {
     background-image: url(images/gear.png);
 }
+.tech-image {
+    background-image: url(images/gear.png);
+
+}
+.apps-image {
+    background-image: url(images/gear.png);
+
+}
+.distract-image {
+    background-image: url(images/gear.png);
+
+}
+.podium-image {
+    background-image: url(images/gear.png);
+
+}
+.creative-image {
+    background-image: url(images/gear.png);
+
+}
+.insights-image {
+    background-image: url(images/gear.png);
+
+}
+.launch-image {
+    background-image: url(images/gear.png);
+
+}
+
 
 
 .related {
