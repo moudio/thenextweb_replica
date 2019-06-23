@@ -1,8 +1,7 @@
-
-.top-articles {
-    font-family: 'Open Sans', sans-serif;
-
+body {
+overflow-x: hidden;
 }
+
 
 nav {
     position: fixed;
@@ -11,12 +10,10 @@ nav {
     z-index: 999;
 }
 
-/* nav::after {
-    content: "";
-    display: table;
-    clear: both;
-} */
+.top-articles {
+    font-family: 'Open Sans', sans-serif;
 
+}
 
 .logo {
     display: none;
@@ -504,11 +501,11 @@ margin: 0 5px;
     margin-bottom: 20px;
 }
 
-.group1,
-.group2
+.group1
  {
     display:flex;
     width: 80%;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 40px auto;
     padding:12px;
@@ -538,8 +535,8 @@ margin: 0 5px;
     margin: 10px;
 }
 
-.group2-item img {
-    width: 100%;
+.related-image {
+    width: 30%;
 }
 
 
@@ -555,17 +552,31 @@ margin: 0 5px;
     color: white;
 }
 
-.image-title {
+
+
+.group-item-text {
     position: absolute;
-    top: 140px;
-    left: 20px;
+    top: 64%;
+    left: 10px;
+}
+.image-title {
+
     font-size: 14px;
 }
 
-.article-title{
+.overlay3 {
     position: absolute;
-    top: 160px;
-    left: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black 75%, white);
+    opacity: 0.6;
+    
+}
+
+
+
+.article-title{
+
     font-size: 20px;
     font-weight: bold;
     width: 90%;
@@ -573,9 +584,7 @@ margin: 0 5px;
 }
 
 .article-author-detail {
-    position: absolute;
-    top: 208px;
-    left: 20px;
+
     font-size: 12px;
     color: lightgray;
 }
@@ -615,8 +624,8 @@ margin: 0 5px;
 .launch-image img,
 .distract-image img
  {
-   width: 380px;
-   height: 232px;
+   width: 100%;
+   height: 100%;
 
 }
 
@@ -970,6 +979,13 @@ footer {
 
      display: inline-block;
  }
+
+ .group1 {
+     width: 100%;
+ }
+ .group-item {
+    width: 45%;
+}
   
 }
 
@@ -977,6 +993,8 @@ footer {
     .latest-deals-thumbnail {
         width: 30%;
     }
+
+
 }
 
 @media only screen and (max-width: 775px){
@@ -1053,6 +1071,9 @@ footer {
 
 .latest-funding-details {
     display: block;
+}
+.group-item {
+    width: 100%;
 }
 
 }
