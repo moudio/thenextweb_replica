@@ -1,14 +1,17 @@
-body {
-overflow-x: hidden;
-}
 
+body {
+    font-family: 'Lato', sans-serif;
+}
 
 nav {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
+    overflow: hidden;
 }
+
+
 
 .top-articles {
     font-family: 'Open Sans', sans-serif;
@@ -252,7 +255,7 @@ main {
     float: left;
     padding: 10px;
     color: rgb(200, 200, 200);
-    font-family: 'Times New Roman', Times, serif'
+    font-family: 'Times New Roman', Times, 'serif';
 
 }
 
@@ -513,13 +516,6 @@ margin: 0 5px;
 
 
 
-.group1:after, .group2:after {
-    content:"";
-    display: block;
-    clear:both;
-    overflow:hidden;
- }
-
 .apps,
 .gear,
 .tech
@@ -530,7 +526,7 @@ margin: 0 5px;
     
 }
 
-.group2-item {
+.group-item {
     width: 30%;
     margin: 10px;
 }
@@ -556,7 +552,7 @@ margin: 0 5px;
 
 .group-item-text {
     position: absolute;
-    top: 64%;
+    top: 58%;
     left: 10px;
 }
 .image-title {
@@ -845,15 +841,16 @@ footer {
 
 .social li .fab, .social li .fas {
     margin: 0 auto;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 21px;
     border-radius: 100%;
     border: 2px solid rgb(85, 85, 85);
     background-color: rgb(85,85,85);
-    padding-top: 7px;
-    padding-bottom: 2px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-left: 7px;
+    font-size: 20px;
     
 }
 
@@ -913,6 +910,14 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1650px) {
+.group-item-text {
+    top: 50%;
+}
+
+
+} 
+
 @media only screen and (max-width: 1265px){
     .latest-news,
     .latest-deals,
@@ -936,6 +941,11 @@ footer {
 }
 
 
+@media only screen and (max-width: 1211px){
+    .group1 {
+        width: 100%;
+    }
+}
 
 
 
@@ -944,7 +954,6 @@ footer {
         background-color: #ff4422;
         width: 100px;
         height: 73px;
-        display: flex;
         align-items: center;
         display: block;
 
@@ -980,9 +989,6 @@ footer {
      display: inline-block;
  }
 
- .group1 {
-     width: 100%;
- }
  .group-item {
     width: 45%;
 }
@@ -995,6 +1001,12 @@ footer {
     }
 
 
+}
+
+@media only screen and (min-width: 776px) and (max-width: 1024px){
+    .group-item-text {
+        top: 50%;
+    }
 }
 
 @media only screen and (max-width: 775px){
@@ -1104,4 +1116,10 @@ footer {
     }
 
 
+}
+
+@media only screen and (max-width: 535px){
+   .footer-links, .social {
+       width: 90%;
+   }
 }
