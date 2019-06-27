@@ -1,0 +1,1125 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+
+
+.top-articles {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.logo {
+    display: none;
+}
+
+
+
+.black-top-nav {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    z-index: 2;
+}
+
+.black-top-nav li {
+    float: left;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+nav li a {
+    text-decoration: none;
+}
+
+.black-top-nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.black-top-nav a {
+    color: rgb(185, 185, 185);
+    padding-bottom: 15px;
+}
+
+.black-top-nav a:hover {
+    color: white;
+}
+
+.black-top-nav .active a {
+    color: white;
+}
+.nav-search {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-search .fa-search,
+.nav-search .fa-bars,
+.nav-text li {
+    padding: 15px;
+}
+
+
+
+.fa-search,
+.fa-bars {
+    border-left: 1px solid rgb(204, 204, 204);
+    font-size: 1.1em;
+}
+
+
+.fa-bars {
+    display: none;
+    color: #ff4422;
+    
+}
+.bars {
+    display: none;
+}
+
+.nav-text {
+    width: 90%;
+}
+
+.nav-text li {
+float: left;
+}
+
+.nested li {
+    padding: 10px 0 10px 5px;
+    display: block;
+    width: 100%;
+}
+.nested li a:hover {
+    color: white;
+}
+
+.nested {
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+    width: 210px;
+    position: absolute;
+}
+.one {
+    top: 25px;
+    display: none;
+    background: black;
+    z-index: 0;
+}
+
+.one:hover,
+.two:hover {
+    display: block;
+}
+
+.two {
+    background: black;
+    display: none;
+    top: 25px;
+    
+    
+
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Play', sans-serif;
+    font-size: .96em;
+    background: white;
+}
+.main-nav li a {
+    color: rgba(170,170,170);
+
+}
+
+.black-top-nav li a:hover + .one,
+.black-top-nav li a:hover + .two {
+    display: block;
+}
+
+
+
+
+.main-nav li a:hover {
+color: black;
+}
+
+
+.yellow-div {
+    background-color: rgb(255, 221, 51);
+    margin-top: -3px;
+}
+
+.yellow-div p {
+    padding: 8px;
+}
+
+.yellow-div a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 104px;
+}
+
+
+/* ARTILCES TOP */
+
+
+.logo-and-date img {
+    width: 35%;
+    float: left;
+
+}
+
+.logo-and-date .date {
+    float: right;
+}
+.logo-and-date {
+    position: absolute;
+    width: 90%;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.title a,
+.second-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.article1 {
+    position: relative;
+    width: 70%;
+    margin-right: 5px;
+    height: 500px;
+}
+
+.article2,
+.article3 {
+    position: relative;
+    height: 49.6%;
+}
+
+.overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, red, rgb(189, 138, 138) );
+    opacity: 0.7;
+}
+
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:black;
+    opacity: 0.4;
+}
+
+.overlay2:hover {
+    opacity: 0.2;
+}
+
+
+
+
+.article-main-image {
+    width: 100%;
+    height: 100%;
+}
+
+.article1 .title {
+    font-size: 2.7em;
+    color: white;
+    margin: 5px 0;
+}
+
+.details li {
+    float: left;
+    padding: 10px;
+    color: rgb(200, 200, 200);
+    font-family: 'Times New Roman', Times, 'serif';
+
+}
+
+.details::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+}
+.top-articles {
+display: flex;
+height: 500px;
+justify-content: space-between;
+color: white;
+margin: 0 5px;
+}
+
+.second-third-articles {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-title {
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.article3{
+    margin-top: .5%;
+}
+
+
+
+/* LATEST NEWS */
+
+.latest-news::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.latest-news,
+.latest-deals {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.latest-news-title {
+    width: 80%;
+    margin: 60px auto 20px;
+}
+
+.latest-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+.latest-news-title a, .category-title a, .latest-funding-title a {
+    color: #f42;
+    font-size: 28px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.latest-news-title a:hover, .category-title a:hover, .latest-funding-title a:hover {
+    color: black;
+}
+
+
+.author-detail {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Lato', 'san-serif';
+}
+
+.author-detail a {
+    text-decoration: none;
+    color: gray;
+    padding-right: 10px;
+}
+
+
+/* LATEST FUNDING */
+
+.latest-funding {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.latest-funding span a{
+    color: #f42;
+    font-size: 16px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.span1 {
+    padding: 0 10px;
+    
+}
+
+.info {
+    border-right: 1px solid #f42;
+}
+
+.latest-funding-details {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subjectwell,
+.springlabs,
+.symphony,
+.buy {
+    width: 25%;
+    padding: 10px;
+}
+
+.fund-group a {
+    text-decoration: none;
+    position: relative;
+}
+
+.fund-group img {
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fund-group-name {
+    background-color: #f42;
+    color: white;
+    font-size: 18px;
+    padding-right: 16px;
+    padding-left: 84px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Lato', 'san-serif';
+}
+
+.fund-detail {
+    padding-right: 16px;
+    padding-left: 84px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    background: rgba(255,68,34,.08);
+}
+
+.fund-detail h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', 'san-serif';
+    padding-bottom: 5px;
+}
+
+.fund-detail h5 {
+    font-size: 12px;
+    opacity: 0.5;
+    font-family: 'Lato', 'san-serif';
+}
+
+
+
+
+.latest-funding-details  ul {
+    padding: 16px;
+    border-bottom: 1px solid rgb(253, 178, 165);
+    background-color: rgba(255, 68, 34, 0.027);
+    height: 50px;
+}
+
+.latest-funding-details ul li a, .latest-funding-details p a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-family: 'Lato', 'san-serif';
+    line-height: 25px;
+}
+
+.latest-funding-details ul li a {
+    font-size: 13px;
+}
+
+.latest-funding-details ul li a:hover {
+    color: black;
+}
+
+.latest-funding-details p a {
+    font-size: 12px;
+}
+
+.index {
+    color: rgb(175, 174, 174);
+}
+
+.latest-funding-details .fas {
+    margin-right: 10px;
+    color: black;
+}
+
+
+.subjectwell,
+.symphony,
+.buy,
+.springlabs {
+    width: 285px;
+    height: 294px;
+}
+
+.latest-funding-details p {
+    background-color: rgba(255, 67, 34, 0.027);
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+}
+
+
+/* GROUPS */
+
+.category-title {
+    margin-bottom: 20px;
+}
+
+.group1
+ {
+    display:flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding:12px;
+}
+
+
+
+.apps,
+.gear,
+.tech
+ {
+    float:left;
+    width: 30%;
+    margin: 10px;
+    
+}
+
+.group-item {
+    width: 30%;
+    margin: 10px;
+}
+
+.related-image {
+    width: 30%;
+}
+
+
+.tech-image,
+.apps-image,
+.launch-image,
+.distract-image,
+.gear-image,
+.creative-image,
+.insights-image,
+.podium-image {
+    position: relative;
+    color: white;
+}
+
+
+
+.group-item-text {
+    position: absolute;
+    top: 58%;
+    left: 10px;
+}
+.image-title {
+
+    font-size: 14px;
+}
+
+.overlay3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black 75%, white);
+    opacity: 0.6;
+    
+}
+
+
+
+.article-title{
+
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+
+}
+
+.article-author-detail {
+
+    font-size: 12px;
+    color: lightgray;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.article-author-detail a {
+    text-decoration: none;
+    color: lightgray;
+    padding-right: 10px;
+}
+
+.article-title a:hover {
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.article-author-detail a:hover {
+    color: white;
+}
+
+.article-title,
+.article-author-detail,
+.image-title {
+    font-family: 'Lato', 'san-serif';
+}
+ 
+
+.tech-image img,
+.apps-image img,
+.gear-image img,
+.creative-image img,
+.podium-image img,
+.insights-image img,
+.launch-image img,
+.distract-image img
+ {
+   width: 100%;
+   height: 100%;
+
+}
+
+
+
+.related {
+    display:flex;
+    justify-content: flex-start;
+    background-color: rgba(255,68,34,.06);
+    width: 100%;
+    margin: 4px 0;
+    height: 98px;
+}
+
+.related-details {
+    padding: 15px;
+    width: 90%;
+}
+
+.related-latest {
+    font-family: 'Lato', 'san-serif';
+    font-size: 13px;
+    color: #f42;
+}
+
+.related-title a {
+    font-family: 'Lato', 'san-serif';
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f42;
+    margin-bottom: 5px;
+}
+
+.related-title a:hover {
+    border-bottom: 1px solid rgb(255, 179, 166);
+}
+
+
+.group-list li {
+    width: 85%;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.group-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.group-list li a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+    font-family: 'Lato', 'san-serif';
+    line-height: 25px;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.group-list li a:hover {
+    color: black;
+}
+
+.image-title {
+    color: white;
+    font-family: 'Lato', 'san-serif';
+}
+
+
+/* LATEST DEALS */
+
+.main-deals {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.main-deals:after {
+    content:"";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.latest-deals-title a {
+    float:left;
+    color: #f42;
+    font-size: 28px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.latest-deals-title a:hover, .more-deals a:hover {
+    color: black;
+}
+
+.fa-greater-than {
+    font-size: 14px;
+    vertical-align: 3px;
+}
+
+
+
+.more-deals {
+    float: right;
+}
+
+
+.more-deals a{ 
+    color: #f42;
+    font-size: 18px;
+    font-family: 'Lato', 'san-serif';
+    text-decoration: none;
+}
+
+
+
+.latest-deals {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.latest-deals:after {
+    content:"";
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.latest-deals-thumbnail, .latest-news-thumbnail {
+    width: 24%;
+    padding: 20px 0;
+    margin: 5px;
+}
+
+.latest-news-thumbnail img,
+.latest-deals-thumbnail img {
+    width: 100%;
+}
+
+.deals-title, .thumbnail-title {
+    width: 90%;
+    font-size: 17px;
+    font-family: 'Lato', 'san-serif';
+    font-weight: bold;
+    padding: 5px 0;
+    line-height: 23px;
+}
+
+.deals-title a, .thumbnail-title a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.deals-title a:hover, .thumbnail-title a:hover{
+    color: #f42;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(247, 117, 95);
+}
+
+.deals-price {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+}
+
+.strike-price {
+    font-size: 13px;
+    color: rgb(170, 170, 170);
+    text-decoration: line-through;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-top {
+    margin: 0 auto;
+    height: 90px;
+    background-color: rgb(13,13,13);
+    padding-top: 42px;
+    padding-bottom: 28px;  
+}
+
+.social {
+    text-align: center;
+    width: 80%;
+    height: 45px;
+    padding-bottom: 21px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    width: 80%;
+    height: 24px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social ul, .footer-links ul {
+    display: inline-block;
+}
+
+
+
+.social li .fab, .social li .fas {
+    margin: 0 auto;
+    width: 20px;
+    height: 21px;
+    border-radius: 100%;
+    border: 2px solid rgb(85, 85, 85);
+    background-color: rgb(85,85,85);
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-left: 7px;
+    font-size: 20px;
+    
+}
+
+.social li .fab:hover, .social li .fas:hover {
+    background-color: black;
+}
+
+
+.social li a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 22px;
+    font-family: 'Lato', 'san-serif';
+    
+}
+
+
+ .footer-links li, .social li {
+    list-style-type: none;
+    float:left;
+    margin-right: 20px;
+
+
+}
+
+ .footer-links li a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 13px;
+    font-family: 'Lato', 'san-serif';
+}
+
+.footer-links li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    height: 57px;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Lato', 'san-serif';
+    font-size: 13px;
+
+}
+
+.footer-bottom img {
+    width: 37px;
+    height: 9px;
+}
+
+.latest-funding ul{
+    display: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1650px) {
+.group-item-text {
+    top: 50%;
+}
+
+
+} 
+
+@media only screen and (max-width: 1265px){
+    .latest-news,
+    .latest-deals,
+    .latest-funding-details,
+    .latest-funding {
+        width: 95%;
+        margin: 0 auto;
+            }
+
+.latest-news-thumbnail {
+    width: 30%;
+}
+
+
+
+.latest-deals-thumbnail {
+    width: 23%;
+}
+
+    
+}
+
+
+@media only screen and (max-width: 1211px){
+    .group1 {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1025px){
+    .logo {
+        background-color: #ff4422;
+        width: 100px;
+        height: 73px;
+        align-items: center;
+        display: block;
+
+        
+    }
+    .logo img {
+        width: 50%;
+        display: block;
+        margin: auto;
+        padding-top: 30px;
+    }
+    
+    nav .nav-container {
+        display: flex;
+    }
+
+    .nav-content {
+        width: 90%;
+    }
+
+
+    .top-articles .second-title {
+        font-size: 1.1em;
+    }
+
+    .buy {
+        display: none;
+    }
+
+
+  .span1 a {
+
+     display: inline-block;
+ }
+
+ .group-item {
+    width: 45%;
+}
+  
+}
+
+@media only screen and (max-width: 900px){
+    .latest-deals-thumbnail {
+        width: 30%;
+    }
+
+
+}
+
+@media only screen and (min-width: 776px) and (max-width: 1024px){
+    .group-item-text {
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width: 775px){
+   nav .logo {
+        width: 100px;
+        height: 47px;        
+    }
+
+    .logo img {
+        width: 50%;
+        padding-top: 17px;
+    }
+
+    .black-top-nav,
+    .main-nav .nav-text {
+        display: none;
+    }
+   .nav-search {
+       align-self: flex-end;
+   }
+   .main-nav {
+       justify-content: flex-end;
+   }
+
+    .nav-search {
+        width:120px;
+    }
+   .bars {
+       display: block;
+   }
+
+   main {
+    margin-top: 78px;
+}
+.top-articles {
+    position: static;
+    display: block;
+    height: auto;
+}
+.title a {
+    color: white;
+}
+.article1 {
+    width: 100%;
+}
+
+.article1,
+.article2,
+.article3 {
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.second-third-articles {
+    display: block;
+    width: 100%;
+}
+.logo-and-date {
+    display: none;
+}
+
+.article1 .title,
+.second-title {
+    font-size: 1.2em;
+    margin-right: 12px;
+}
+
+
+.subjectwell,
+.springlabs,
+.symphony {
+    width: 100%;
+}
+
+.latest-funding-details {
+    display: block;
+}
+.group-item {
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 730px){
+    .latest-news-thumbnail,
+    .latest-deals-thumbnail
+    {
+        display: flex;
+        width: 100%;
+    }
+
+
+
+    .thumbnail-img,
+    .latest-deals-img {
+        width: 30%;
+        margin-right: 10px;
+    }
+
+.thumbnail-text,
+.latest-deals-text {
+    width: 65%;
+}
+    .latest-news-thumbnail img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 535px){
+   .footer-links, .social {
+       width: 90%;
+   }
+}
